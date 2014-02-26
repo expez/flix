@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
   def index
-    @movies = %[ Alien Terminator Rambo]
+    @movies = "Alien Terminator Rambo".split
   end
 end
