@@ -44,4 +44,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'erubis', '2.7.0'
+gem 'erubis', '2.7.0', :group => :development
+
+gem 'pry', '0.9.12.6', :group => :development
+gem 'pry-doc', '0.5.1', :group => :development
