@@ -44,7 +44,16 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'erubis', '2.7.0', :group => :development
+group :development do
+  gem 'erubis', '2.7.0'
+  gem 'pry', '0.9.12.6'
+  gem 'pry-doc', '0.5.1'
+end
 
-gem 'pry', '0.9.12.6', :group => :development
-gem 'pry-doc', '0.5.1', :group => :development
+group :test, :development do
+  gem "rspec-rails", "2.13.1"
+end
+
+group :test do
+  gem "capybara", "2.1.0"
+end
