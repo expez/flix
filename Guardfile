@@ -8,7 +8,6 @@ guard :rspec do
 
   # Rails example
   watch(%r{^app/(.+)\.rb$})                           {"spec"}
-  watch(%r{^app/(.*)(\.erb|\.haml|\.slim)$})          {"spec"}
   watch(%r{^app/controllers/(.+)_(controller)\.rb$})  {"spec"}
   watch(%r{^spec/support/(.+)\.rb$})                  { "spec" }
   watch('config/routes.rb')                           { "spec" }
@@ -21,4 +20,3 @@ guard :rspec do
   watch(%r{^spec/acceptance/(.+)\.feature$})
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
 end
-
