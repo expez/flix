@@ -1,5 +1,5 @@
 class MoviesController < ApplicationController
   def index
-    @movies = "Terminator Alien Rambo".split(' ')
+    @movies = Movie.all
   end
 end
