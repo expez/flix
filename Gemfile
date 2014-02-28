@@ -52,6 +52,7 @@ end
 
 group :test, :development do
   gem "rspec-rails", "2.13.1"
+  gem 'guard-rspec', require: false
 end
 
 group :test do
