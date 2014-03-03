@@ -6,4 +6,9 @@ describe Movie do
 
     expect(movie.flop?).to be_true
   end
+  it "is not a flop if the total gross exceeds $50M" do
+    movie = Movie.new(total_gross: 51000000)
+
+    expect(movie.flop?).to be_false
+  end
 end
