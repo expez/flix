@@ -9,5 +9,4 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-Flix::Application.config.secret_key_base = 'ab3fcbadb88c6f2dfb2ee283ae55b12699f522734c52b77343358a0406c64ed754f552a6c214598aefb9de9eb0910df4a8ad790e68769eb82628fe324fe359d0'
-Date::DATE_FORMATS[:default] = "%B %e, %Y"
+Flix::Application.config.secret_key_base = '11760b42198ff7a45bd1fce5b92c726d73771a10eb56f4d03726ffcfdb3436d54ae9b80d153046d41516ab15c3e61ef1911ccf87c55f9c751b84d137832a3a74'
