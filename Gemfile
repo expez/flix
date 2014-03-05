@@ -45,6 +45,7 @@ end
 # gem 'debugger', group: [:development, :test]
 
 group :development do
+  gem 'guard-livereload'
   gem 'erubis', '2.7.0'
   gem 'pry', '0.9.12.6'
   gem 'pry-doc', '0.5.1'
