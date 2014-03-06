@@ -11,7 +11,11 @@
       </li>
       <li class="required stars">
         <%= f.label :stars %>
-        <%= f.select :stars, 1..5, prompt: "Pick one" %>
+        <% (1..5).each do |star| %>
+          <span class="star">
+            <%= f.radio_button :stars, star %> <%= star %>
+          </span>
+        <% end %>
       </li>
       <li class="required">
         <%= f.label :comment %>
